@@ -1,7 +1,7 @@
 # timeline-functions
-Visualize various periodic functions on a scrolling timeline. Function values are provided through Socket.io and displayed using D3.js. 
+Visualize various periodic functions on a scrolling timeline. Values are provided through Socket.io and displayed using D3.js. 
 
-A Node Express server functions as the backend of this project, serving the static webpage as a socket feed. The feed continuously sends out values for various periodic functions - sine, square, triangle, etc. The webpage connects to this feed and displays incoming values onto a timeline. 
+A Node Express server hosts a static webpage and a Socket.io feed. The feed continuously broadcasts output values for different periodic functions - sine, square, triange, etc. - to any listening clients. The webpage connects to this feed and subscribes to one of the function channels, then displays the incoming values on a timeline chart. 
 
 ## Setup
 Node.js is required to run this application. 
