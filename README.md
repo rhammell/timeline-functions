@@ -21,9 +21,9 @@ node app.js
 ```
 
 # Usage
-With the development server running, open a browser and browse to `localhost:3000` to view the web interface. Function values are plotted along with their timestamps to create a continuous line chart. 
+With the development server running, open a browser and browse to `localhost:3000` to view the web interface. Function values are plotted versus their timestamps to create a continuous line chart.
 
- Display options allow the user to control which function is visualized, the length of the timeline, and if datapoints are shown. 
+Select options allow users to control which function is displayed, timeline length, and if datapoints are shown. 
 <p align="center">
   <img width="800" src="public/img/chart.gif">
 </p>
