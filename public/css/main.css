@@ -1,0 +1,47 @@
+body {
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+}
+
+#main {
+  width: 960px;
+  margin: 2em auto 4em auto;
+}
+
+#wrapper {
+  margin-left: 0px;
+}
+
+h1 {
+  font-size: 45px;
+  margin: .3em 0 .1em 0;
+}
+
+body p {
+  font-size: 13px;
+}
+
+.grid-line {
+  stroke: #e2e2e2;
+  stroke-width: 1px;
+}
+
+circle {
+  fill:#ffffff;
+  stroke: #293241;
+  stroke-width: 1px;
+}
+
+.line {
+  fill: none;
+  stroke: #3d5a80;
+  stroke-width: 2;
+}
+
+input {
+  vertical-align: -2px;
+}
+
+.options {
+  text-align: right;
+}
