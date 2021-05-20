@@ -19,10 +19,9 @@ npm install
 # Start node development server
 node app.js
 ```
-With the development server running, open a browser and browse to `localhost:3000` to view the web interface. 
 
 # Usage
-Display options allow the user to control which function is visualized, the length of the timeline, and if datapoints are shown. 
+With the development server running, open a browser and browse to `localhost:3000` to view the web interface. Display options allow the user to control which function is visualized, the length of the timeline, and if datapoints are shown. 
 <p align="center">
   <img width="800" src="public/img/chart.gif">
 </p>
