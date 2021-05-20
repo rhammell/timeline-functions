@@ -8,8 +8,6 @@
   <body>
 
     <div id="main">
-
-      <div id="wrapper">
         <div class="options">
           <label for="channels">Function: </label>
           <select id="channels">
@@ -21,17 +19,19 @@
             <option value="clausen">Clausen</option>
             <option value="noise">Noise</option>
           </select>
-          <label for="timespan">Duration: </label>
+          <label for="timespan">Timeline Length (sec): </label>
           <select id="timespan">
             <option value="15">15</option>
             <option value="30" selected>30</option>
             <option value="60">60</option>
           </select>
-          <label for="showPoints"> Show Points</label>
-          <input type="checkbox" id="showPoints" name="showPoints">
+          <label for="points">Data Points</label>
+          <select id="points">
+            <option value="off" selected>Off</option>
+            <option value="on">On</option>
+          </select>
         </div>
         <svg id="chart"></svg>
-      </div> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

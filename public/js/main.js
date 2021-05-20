@@ -2,8 +2,9 @@
 var timespan = parseInt($('#timespan').val());
 
 // SVG size params
-var margin = {top: 40, right: 1, bottom: 50, left: 30};
-var width = 960;
+var leftMargin = 30;
+var margin = {top: 40, right: 0, bottom: 50, left: leftMargin};
+var width = 960 - leftMargin;
 var height = 300;
 
 // Define SVG
@@ -80,7 +81,7 @@ svg.append("g")
 // Add Y axis right
 svg.append("g")
     .attr("class", "axis")
-    .attr("transform", "translate(" + width + ", 0)")
+    .attr("transform", "translate(" + (width-1) + ", 0)")
     .call(yAxisRight);
 
 // Init time offset
@@ -109,7 +110,7 @@ function updateChart() {
   })
 
   // Show datapoints on chart if check is enabled
-  if ($('#showPoints').is(':checked')) {
+  if ($('#points').val() == 'on') {
 
     // Join trade data to cirle elements
     var circles = container.selectAll('circle')
@@ -126,11 +127,11 @@ function updateChart() {
         .attr('cy', d => y(d.y))
       .merge(circles)
         .attr('cx', d => x(d.dateObj))
-        
   } else {
     // Remove all datapoint elements
     container.selectAll('circle').remove();
   }
+  
 
   // Update line data
   svg.select(".line")   // change the line
